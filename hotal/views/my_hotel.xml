@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+
+        <menuitem
+            id="menu_hotel_root"
+            name="Hotel Management"
+            
+            sequence="10"
+            
+        />
+
+        <menuitem
+            id="menu_hotel_rooms"
+            name="Rooms"
+            parent="menu_hotel_root"
+            action="action_hotel_room"
+            sequence="10"
+        />
+
+        <menuitem
+            id="menu_hotel_reservations"
+            name="Reservations"
+            parent="menu_hotel_root"
+            action="action_reservation"
+            sequence="20"
+        />
+
+        <menuitem
+            id="menu_my_tag"
+            name="tag"
+            parent="menu_hotel_root"
+            action="action_my_tag"
+            sequence="50"
+        />
+    </data>
+</odoo>
+ <!-- web_icon="hotal/static/description/ChatGPT.png" -->

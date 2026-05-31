@@ -1,0 +1,265 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hotal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20251208\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-20 18:42+0000\n"
+"PO-Revision-Date: 2026-01-20 18:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__active
+#: model:ir.model.fields,field_description:hotal.field_my_hotel__active
+#: model:ir.model.fields,field_description:hotal.field_my_tag__active
+msgid "Active"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_reservation__create_uid
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__create_uid
+#: model:ir.model.fields,field_description:hotal.field_my_tag__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_reservation__create_date
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__create_date
+#: model:ir.model.fields,field_description:hotal.field_my_tag__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_reservation__display_name
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__display_name
+#: model:ir.model.fields,field_description:hotal.field_my_hotel__display_name
+#: model:ir.model.fields,field_description:hotal.field_my_tag__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model,name:hotal.model_my_hotel
+msgid "Hotel"
+msgstr ""
+
+#. module: hotal
+#: model:ir.ui.menu,name:hotal.menu_hotel_root
+msgid "Hotel Management"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model,name:hotal.model_hotel_reservation
+msgid "Hotel Reservation"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model,name:hotal.model_hotel_room
+msgid "Hotel Room"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_reservation__id
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__id
+#: model:ir.model.fields,field_description:hotal.field_my_hotel__id
+#: model:ir.model.fields,field_description:hotal.field_my_tag__id
+msgid "ID"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_reservation__write_uid
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__write_uid
+#: model:ir.model.fields,field_description:hotal.field_my_tag__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_reservation__write_date
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__write_date
+#: model:ir.model.fields,field_description:hotal.field_my_tag__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: hotal
+#: model:ir.actions.act_window,name:hotal.action_hotel_reservation
+#: model:ir.actions.act_window,name:hotal.action_reservation
+#: model:ir.ui.menu,name:hotal.menu_hotel_reservations
+msgid "Reservations"
+msgstr ""
+
+#. module: hotal
+#: model:ir.actions.act_window,name:hotal.action_hotel_room
+#: model:ir.ui.menu,name:hotal.menu_hotel_rooms
+msgid "Rooms"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model,name:hotal.model_my_tag
+msgid "Tag"
+msgstr ""
+
+#. module: hotal
+#: model:ir.actions.act_window,name:hotal.action_my_tag
+#: model:ir.ui.menu,name:hotal.menu_my_tag
+msgid "tag"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_my_hotel__name
+#: model:ir.model.fields,field_description:hotal.field_my_tag__name
+msgid "اسم الفندق"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_my_hotel__email
+#: model:ir.model.fields,field_description:hotal.field_my_tag__email
+msgid "البريد الإلكتروني"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_my_hotel__rating
+#: model:ir.model.fields,field_description:hotal.field_my_tag__rating
+msgid "التقييم"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_reservation__state
+msgid "الحالة"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__idmyroom
+msgid "الحجوزات"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_reservation__customer_id
+msgid "العميل"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_my_hotel__address
+#: model:ir.model.fields,field_description:hotal.field_my_tag__address
+msgid "العنوان"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_reservation__room_id
+msgid "الغرفة"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__hotel_id
+#: model:ir.model.fields,field_description:hotal.field_my_tag__test1
+msgid "الفندق"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_reservation__total_price
+msgid "المبلغ الإجمالي"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_my_hotel__city
+#: model:ir.model.fields,field_description:hotal.field_my_tag__city
+msgid "المدينة"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_my_tag__namee
+msgid "الوسم"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_reservation__check_out
+msgid "تاريخ الخروج"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_reservation__check_in
+msgid "تاريخ الدخول"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields.selection,name:hotal.selection__hotel_room__room_type__suite
+msgid "جناح"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_reservation__name
+msgid "رقم الحجز"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__name
+msgid "رقم الغرفة"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_my_hotel__phone
+#: model:ir.model.fields,field_description:hotal.field_my_tag__phone
+msgid "رقم الهاتف"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__price
+msgid "سعر الليلة"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__capacity
+msgid "عدد الأشخاص"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__t1
+#: model:ir.model.fields,field_description:hotal.field_my_hotel__code
+#: model:ir.model.fields,field_description:hotal.field_my_tag__code
+msgid "كود الفندق"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields.selection,name:hotal.selection__hotel_reservation__state__confirm
+msgid "مؤكد"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__is_available
+msgid "متاحة"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields.selection,name:hotal.selection__hotel_room__room_type__double
+msgid "مزدوجة"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields.selection,name:hotal.selection__hotel_reservation__state__draft
+msgid "مسودة"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields.selection,name:hotal.selection__hotel_room__room_type__single
+msgid "مفردة"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields.selection,name:hotal.selection__hotel_reservation__state__cancel
+msgid "ملغي"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields.selection,name:hotal.selection__hotel_reservation__state__done
+msgid "منتهي"
+msgstr ""
+
+#. module: hotal
+#: model:ir.model.fields,field_description:hotal.field_hotel_room__room_type
+msgid "نوع الغرفة"
+msgstr ""

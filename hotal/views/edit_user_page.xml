@@ -1,0 +1,70 @@
+<template id="edit_user_page" name="Edit User">
+    <t t-call="website.layout">
+        <div class="container mt-4" dir="rtl">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h3>تعديل بيانات المستخدم</h3>
+
+                    <form t-attf-action="/users/update/#{user.get('id')}" 
+                        method="POST">
+                        <input type="hidden" name="csrf_token"
+                            t-att-value="request.csrf_token()"/>
+
+                        <div class="mb-3">
+                            <label class="form-label">الاسم</label>
+                            <input type="text" name="name"
+                                class="form-control"
+                                t-att-value="user.get('name', '')"
+                                required="required"/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">البريد الإلكتروني</label>
+                            <input type="email" name="email"
+                                class="form-control"
+                                t-att-value="user.get('email', '')"
+                                required="required"/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">الجنس</label>
+                            <select name="gender" class="form-select">
+                                <option value="male"
+                                        t-att-selected="'selected' if user.get('gender') == 'male' else ''">
+                                    ذكر
+                                </option>
+                                <option value="female"
+                                        t-att-selected="'selected' if user.get('gender') == 'female' else ''">
+                                    أنثى
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">الحالة</label>
+                            <select name="status" class="form-select">
+                                <option value="active"
+                                        t-att-selected="'selected' if user.get('status') == 'active' else ''">
+                                    نشط
+                                </option>
+                                <option value="inactive"
+                                        t-att-selected="'selected' if user.get('status') == 'inactive' else ''">
+                                    غير نشط
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary">
+                                حفظ التعديل
+                            </button>
+                            <a href="/users" class="btn btn-secondary">
+                                إلغاء
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </t>
+</template>

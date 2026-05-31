@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+
+        <record id="view_hotel_reservation_tree" model="ir.ui.view">
+            <field name="name">hotel.reservation.tree</field>
+            <field name="model">hotel.reservation</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="customer_id"/>
+                    <field name="room_id"/>
+                    <field name="check_in"/>
+                    <field name="check_out"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_hotel_reservation_form" model="ir.ui.view">
+            <field name="name">hotel.reservation.form</field>
+            <field name="model">hotel.reservation</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="customer_id"/>
+                            <field name="room_id"/>
+                            <field name="check_in"/>
+                            <field name="check_out"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_hotel_reservation" model="ir.actions.act_window">
+            <field name="name">Reservations</field>
+            <field name="res_model">hotel.reservation</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

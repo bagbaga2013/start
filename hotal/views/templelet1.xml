@@ -1,0 +1,42 @@
+<odoo>
+<template id="patients_page" name="Patients Page">
+    <t t-call="website.layout">
+        <div class="container mt-4" dir="rtl">
+            <h2 class="mb-4">قائمة المرضى</h2>
+
+            <t t-if="not patients">
+                <div class="alert alert-warning">لا توجد بيانات</div>
+            </t>
+
+            <div class="row">
+                <t t-foreach="patients" t-as="patient">
+                    <div class="col-md-4 mb-3">
+                        <div class="card p-3 shadow-sm">
+
+                            <h5 t-esc="patient.get('name', '')"/>
+
+                            <p class="mb-1">
+                                <strong>البريد: </strong>
+                                <span t-esc="patient.get('email', '')"/>
+                            </p>
+
+                            <p class="mb-1">
+                                <strong>الجنس: </strong>
+                                <span t-esc="patient.get('gender', '')"/>
+                            </p>
+
+                            <p class="mb-0">
+                                <strong>الحالة: </strong>
+                                <span t-esc="patient.get('status', '')"/>
+                            </p>
+
+                        </div>
+                    </div>
+                </t>
+            </div>
+
+        </div>
+    </t>
+</template>
+
+</odoo>

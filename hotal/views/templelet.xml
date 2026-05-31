@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- views/contact_form_template.xml -->
+<odoo>
+<template id="patients_page1" name="Patients Page1">
+    <t t-call="website.layout">
+        <div class="container mt-5 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8" dir="rtl">
+                    <h2>تواصل معنا</h2>
+
+                    <!-- رسالة النجاح بعد الإرسال -->
+                    <t t-if="success">
+                        <div class="alert alert-success">
+                            تم إرسال رسالتك بنجاح!
+                        </div>
+                    </t>
+
+                    <form action="/contact/submit" method="POST" dir="rtl">
+                        <!-- CSRF Token مهم جداً -->
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+                        <div class="mb-3">
+                            <label class="form-label">الاسم الكامل</label>
+                            <input type="text" name="name" class="form-control" required="required"/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">البريد الإلكتروني</label>
+                            <input type="email" name="email"
+                                class="form-control" required="required"/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">رقم الهاتف</label>
+                            <input type="tel" name="phone"  class="form-control"/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">الموضوع</label>
+                            <select name="subject" class="form-select">
+                                <option value="general">استفسار عام</option>
+                                <option value="support">دعم فني</option>
+                                <option value="sales">مبيعات</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">الرسالة</label>
+                            <textarea name="message" class="form-control"
+                            rows="5" required="required"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            إرسال
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </t>
+</template>
+</odoo>

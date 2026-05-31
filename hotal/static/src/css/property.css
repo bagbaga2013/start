@@ -1,0 +1,9 @@
+.custom table thead > tr >th {
+background-color: blue !important;
+color: hsl(0, 53%, 85%) !important;
+}
+
+.custom table thead > tr >th:nth-child {
+width: 250px !important;
+
+}
