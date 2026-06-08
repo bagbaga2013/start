@@ -11,8 +11,8 @@
         'views/my_hotel.xml',
         'views/templelet.xml',
         'views/templelet1.xml',
-        'views/users_page.xml',
-        'views/edit_user_page.xml',
+        'views/users_page1.xml',
+        'views/edit_user_page1.xml',
 
     ],
     'assets': {
